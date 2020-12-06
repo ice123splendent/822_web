@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+
+<link 
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" 
+    rel="stylesheet">
+
+<title>
+Sign in - Google Accounts
+</title>
+
+<style>
+
+body {
+    font-family: "Noto Sans"
+}
+
+.outer {
+  display: block;
+  color: black;
+  border: 1px solid rgb(180, 180, 180);
+  border-radius: 10px;
+  width: 448px;
+  height: 500px;
+  margin: 50px auto 0px auto;
+  text-align: center;
+} 
+
+.in {
+    display: block;
+    width: 368px;
+    height: 401px;  
+    margin: 50px auto;
+}
+
+a:link, a:hover, a:visited, a:active {
+    font-size: 13px;
+    color: grey;
+    blackground-color: transparent;
+    text-decoration: none;
+    position: relative; 
+        top: 24px; 
+        left: 700px;
+}
+
+.sign {
+    font-size: 24px;
+}
+
+.dropbtn {
+  background-color: red;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: blue;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  background-color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: grey;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: blue;
+}
+
+</style>
+</head>
+
+<body>
+
+
+    <div class = "outer">
+        <div class = "in">
+            <img 
+                src = "./picture/logo.svg" /* 絕對路徑how */
+                alt = "What a sad story"
+                width = "368" 
+                height = "24" >
+
+            <br>
+
+            <span class = "sign">
+            Sign in
+            </span>
+
+            <p>
+            Use your Google Account
+            </p>
+        </div>
+    </div>
+
+
+    <!-- <div class = "custom-select" style = "width 200px;"> 
+        <select>
+            <option value = "0"> English </option>
+            <option value = "1"> English </option>
+            <option value = "2"> Chinese(Tranditional) </option>
+            <option value = "3"> Chinese(Simplified) </option>
+            <option value = "4"> Japanese </option>
+            <option value = "5"> German </option>
+            <option value = "6"> Dansk </option>
+            <option value = "7"> Deutch </option>
+        </select>
+    </div> -->
+
+    <div class = "dropdown">
+        <button class = "dropbtn"> English (United States) </button>
+        <div class = "dropdown-content">
+        <a href = "#"> English (United States) </a>
+        <a href = "#"> Chinese (Tranditional) </a>
+        <a href = "#"> Chinese (Simplified) </a>
+        <a href = "#"> German </a>
+        <a href = "#"> Japanese </a>
+        </div>
+    </div>
+  
+
+
+<!--
+    <a href = "https://support.google.com/accounts?hl=en#topic=3382296"; target = "_blank"><bold> &nbsp Help &nbsp </bold></a>
+    <a href = "https://policies.google.com/privacy?gl=TW&hl=en"; target = "_blank"> &nbsp Privacy &nbsp  </a>
+    <a href = "https://policies.google.com/terms?gl=TW&hl=en"; target = "_blank"> &nbsp  Terms &nbsp  </a>
+-->
+
+
+
+
+
+
+</body>
+</html>

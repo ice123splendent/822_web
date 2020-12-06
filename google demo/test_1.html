@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.Lang_select {          <!--button名可自己取-->
+    border: none;
+    background-color: white;
+    color: black;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.dropdown {             <!--dropdown 為系統規定，無法亂更改-->
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;  <!--此處的背景顏色會被 .dropdown-content a給覆蓋-->
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    background-color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background: grey;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .Lang_select {
+    background-color: grey;
+}
+</style>
+</head>
+
+<body>
+
+    <div class = "dropdown">
+        <button class = "Lang_select"> English (United States) </button>
+        <div class = "dropdown-content">
+        <a href = "#"> English (United States) </a>
+        <a href = "#"> Chinese (Tranditional) </a>
+        <a href = "#"> Chinese (Simplified) </a>
+        <a href = "#"> German </a>
+        <a href = "#"> Japanese </a>
+        </div>
+    </div>
+
+</body>
+</html>

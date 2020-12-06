@@ -1,0 +1,160 @@
+body {
+    font-family: "Noto Sans";
+}
+.universal {
+    display: block;
+    border: 1px solid tranparent;
+    width: 448px;
+    height: 600px;
+    position: relative;
+    margin: 105px auto 0px auto;
+
+    /* margin: 50px auto 0px auto; */
+}
+
+.outer {
+  display: block;
+  color: black;
+  border: 1px solid rgb(180, 180, 180);
+  border-radius: 10px;
+  width: 448px;
+  height: 500px;
+  margin: 0px auto 0px auto;
+  text-align: center;
+} 
+
+.in {
+    display: block;
+    width: 368px;
+    height: 401px;  
+    margin: 50px auto;
+}
+
+a:link, a:hover, a:visited, a:active {
+    font-size: 13px;
+    color: grey;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.foot {
+    display: inline-block;
+    position: absolute;
+        top: 524px;
+        left: 296px;
+        right: 0px;
+    /* margin: 0px 300px 0px 700px; */
+}
+
+.sign {
+    font-size: 24px;
+}
+
+.Lang_select {          
+    border: none;
+    background-color: white;
+    color: black;
+    font-size: 13px;
+    cursor: pointer;
+    position: relative;
+        top: 24px;
+        left: 0px;
+}  
+
+.dropdown {             
+    display: inline-block;
+
+}  
+
+.dropdown-content {
+    display: none;
+    background-color: white;  
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    position: relative;
+        top: 24px;
+        left: 0px;
+}  
+
+.dropdown-content a {
+    color: black;
+    background-color: white;
+    padding: 16px 5px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background: grey;}
+
+/*.dropdown:hover .dropdown-content {            
+  display: block;
+}   */
+
+.dropdown:hover .Lang_select {
+    background-color: grey;
+}
+
+.show  {
+    display: block;         /* use javascript to show*/
+}
+
+input[type = text], select {
+    width: 100%;
+    padding: 16px 16px;
+    font-size: 16px;
+    display: inline-box;
+    border: solid 0.5px lightgrey;
+    border-radius: 4px;
+    box-sizing: border-box          /*內建元素將不會再進一步增大box大小ㄌ*/
+}
+
+.useless {
+    display: block;
+    position: relative;
+        top: 10px; 
+    border: transparent;
+    font-weight: bold;
+}
+
+.LM {
+    display: block;
+    font-weight: bold;
+    color: rgb(101, 105, 113);
+    position: relative;
+        top: 35px;
+    border: transparent;
+}
+
+.last {
+    display: block;
+    color: rgb(27, 115, 232);
+    position: relative;
+        top: 65px;
+    border: transparent;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.but_next {
+    display: inline-block;
+    position: absolute;
+        right: 0px;
+    background-color: rgb(27, 115, 232);
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px 28px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.Create_account {
+    display: inline-block;
+    /*border: 1px solid red;*/
+    color: rgb(27, 115, 232);  /*為何這邊無法調整筐內顏色？*/
+    margin-top: 12px;
+    cursor: pointer;
+}

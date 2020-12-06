@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+
+<link 
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" 
+    rel="stylesheet">
+
+<link 
+    rel=stylesheet 
+    type="text/css" 
+    href="button.css"/>
+
+
+<title>
+Sign in - Google Accounts
+</title>
+
+
+</head>
+
+<body>
+
+<div class = "universal">
+    <div class = "outer">
+        <div class = "in">
+            <img 
+                src = "./picture/logo.svg"     /* 絕對路徑how */
+                alt = "What a sad story"
+                width = "368" 
+                height = "24" >
+            <br>
+            <span class = "sign">
+            Sign in
+            </span>
+
+            <p>
+            Use your Google Account
+            </p>
+
+            <form>
+                <label for = "Uname"></label>
+                <input type = "text" id = "Uname" name = "Uname" placeholder = "Email or phone">
+            </form>
+
+
+            <div class = "useless" style = "text-align: left;">
+                <a href = "https://accounts.google.com/signin/v2/usernamerecovery?flowName=GlifWebSignIn&flowEntry=AddSession"; target = "_blank"; style = "color: rgb(27, 115, 232)">
+                    Forget email?
+                </a>
+            </div>
+
+            <div class = "LM" style = "text-align: left;">
+                <p style = "font-size: 13px; font-weight: normal;">Not your computer? Use Guest mode to sign in privately.
+                    <a href = "#" style = "color: rgb(27, 115, 232); font-weight: bold;">Learn more</a>
+                </p>    
+            </div>
+
+            <div class = "last" style = "text-align: left;">
+                <a href = "#" class = "Create_account" style = "color: rgb(27, 115, 232);"> Create account </a>
+                    <button class = "but_next"> Next </button> 
+            </div>
+
+            
+
+
+        </div>
+    </div>
+
+
+    <!-- <div class = "custom-select" style = "width 200px;"> 
+        <select>
+            <option value = "0"> English </option>
+            <option value = "1"> English </option>
+            <option value = "2"> Chinese(Tranditional) </option>
+            <option value = "3"> Chinese(Simplified) </option>
+            <option value = "4"> Japanese </option>
+            <option value = "5"> German </option>
+            <option value = "6"> Dansk </option>
+            <option value = "7"> Deutch </option>
+        </select>
+    </div> -->
+
+
+    <div class = "dropdown">
+        <button onclick = "drop_or_close()" class = "Lang_select"> English (United States) ▾</button>
+        <div id = "Lang_selection" class = "dropdown-content">
+            <a href = "#"> English (United States) </a>
+            <a href = "#"> Chinese (Tranditional) </a>
+            <a href = "#"> Chinese (Simplified) </a>
+            <a href = "#"> German </a>
+            <a href = "#"> Japanese </a>
+        </div>
+    </div>
+
+    <div class = "foot">
+    <a href = "https://support.google.com/accounts?hl=en#topic=3382296"; target = "_blank"> &nbsp Help &nbsp </a>
+    <a href = "https://policies.google.com/privacy?gl=TW&hl=en"; target = "_blank"> &nbsp Privacy &nbsp  </a>
+    <a href = "https://policies.google.com/terms?gl=TW&hl=en"; target = "_blank"> &nbsp  Terms &nbsp  </a>
+    </div>
+
+</div>
+
+
+<script>
+    function drop_or_close() {
+        document.getElementById("Lang_selection").classList.toggle("show");
+    }
+    window.onclick = function(event) {
+        if (!event.target.matches('.Lang_select')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
+
+
+
+
+
+</body>
+</html>
